@@ -22,7 +22,7 @@ public class main {
 		      statement = connect.createStatement();
 		      
 		      //Write
-		      connect.prepareStatement("insert into user(username,password) values('me','0000')").executeUpdate();
+		      connect.prepareStatement("insert into user(username,password) values('me2','0000')").executeUpdate();
 		      
 		      //Read
 		      resultSet = statement.executeQuery("select * from user");
