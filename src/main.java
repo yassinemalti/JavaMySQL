@@ -17,11 +17,12 @@ public class main {
 		  try{
 			  
 			  Class.forName("com.mysql.jdbc.Driver");
-		      connect = DriverManager.getConnection("jdbc:mysql://localhost/javaproject?user=root&password=");
+		      //connect = DriverManager.getConnection("jdbc:mysql://localhost/javaproject?user=root&password=");
+			  connect = DriverManager.getConnection("jdbc:mysql://mahtlemcen.org/mahtlemc_java?user=mahtlemc_java&password=^HN8ZwIHnT,r");
 		      statement = connect.createStatement();
 		      
 		      //Write
-		      //connect.prepareStatement("insert into user(username,password) values('Yassine','0000')").executeUpdate();
+		      connect.prepareStatement("insert into user(username,password) values('me','0000')").executeUpdate();
 		      
 		      //Read
 		      resultSet = statement.executeQuery("select * from user");
